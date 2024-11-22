@@ -1,0 +1,163 @@
+@import url('reset.css');
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+header {
+    background: rgba(106, 90, 205, 0.9); /* Violet avec opacité */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 5rem;
+}
+
+.reservation, .calendar {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #6a5acd;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #5a4bb2;
+}
+
+#calendar {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+/* styles.css */
+.day {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin: 0.2rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: white;
+}
+
+.day.unavailable {
+    background: #f88;
+    color: white;
+    cursor: not-allowed;
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.8); /* Noir avec opacité */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* Requêtes de media pour la responsivité */
+
+/* Tablettes et petits écrans */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+
+    main {
+        flex-direction: column; /* Changer l'alignement en colonne */
+        margin: 1rem;
+    }
+
+    .reservation, .calendar {
+        width: 90%; /* Largeur plus grande pour une meilleure visibilité */
+        margin: 0.5rem 0;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    header {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .reservation, .calendar {
+        width: 100%; /* Prendre toute la largeur de l'écran */
+        margin: 0.5rem 0;
+    }
+
+    .day {
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}

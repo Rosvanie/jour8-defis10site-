@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation | Hôtel ou Restaurant</title>
+    <link rel="stylesheet" href="../css/reservation.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Hôtel Luxor</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../pages/about.html">À propos</a></li>
+                <li><a href="../pages/gallerie.html">Galerie</a></li>
+                <li><a href="pages/reservation.html" class="active">Réservation</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="reservation">
+            <h2>Formulaire de Réservation</h2>
+            <form id="reservationForm">
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Date de réservation :</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="guests">Nombre de personnes :</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+                <button type="submit">Réserver</button>
+            </form>
+        </section>
+        <section class="calendar">
+            <h2>Calendrier interactif</h2>
+            <div id="calendar"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Votre Site de Réservation</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | Hôtel Luxor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Hôtel Luxor</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="pages/about.html">À propos</a></li>
+                <li><a href="pages/gallerie.html">Galerie</a></li>
+                <li><a href="pages/reservation.html">Réservation</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Bienvenue à l'Hôtel Luxor</h1>
+            <p>Un séjour luxueux au cœur de la tranquillité.</p>
+            <a href="reservation.html" class="cta">Réserver maintenant</a>
+        </div>
+    </header>
+    
+
+    <!-- Section À propos -->
+    <section class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to our luxurious hotel, where comfort meets elegance. 
+                    Our mission is to provide you with an unforgettable experience, 
+                    whether you're here for leisure or business.
+                </p>
+                <p>
+                    Enjoy state-of-the-art amenities, exceptional service, and 
+                    breathtaking views. Relax in our elegantly designed rooms, 
+                    indulge in exquisite dining, and make memories that last a lifetime.
+                </p>
+                <a href="#services" class="btn">Discover More</a>
+            </div>
+            <div class="about-image">
+                <img src="img/about.jpg" alt="Luxurious Hotel">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Section Services -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <img src="img/spa.jpg" alt="Luxury Spa">
+                <h3>Luxury Spa</h3>
+                <p>Relax and rejuvenate with our world-class spa treatments.</p>
+            </div>
+            <div class="service">
+                <img src="img/dinner.jpg" alt="Gourmet Dining">
+                <h3>Gourmet Dining</h3>
+                <p>Experience exquisite dining with flavors from around the globe.</p>
+            </div>
+            <div class="service">
+                <img src="img/room.jpg" alt="Luxury Rooms">
+                <h3>Luxury Rooms</h3>
+                <p>Stay in our elegantly designed rooms with breathtaking views.</p>
+            </div>
+            <div class="service">
+                <img src="img/pool.jpg" alt="Infinity Pool">
+                <h3>Infinity Pool</h3>
+                <p>Enjoy a relaxing swim in our stunning infinity pool.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Section Galerie -->
+    <section id="gallery" class="gallery">
+        <h2>Galerie</h2>
+        <div class="gallery-images">
+            <img src="img/room2.jpg" alt="Chambre luxueuse">
+            <img src="img/resto.jpg" alt="Restaurant gastronomique">
+            <img src="img/spa2.jpg" alt="Centre de bien-être">
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <footer id="contact" class="footer">
+        <h2>Contactez-nous</h2>
+        <p>Email : contact@hotelluxor.com | Téléphone : +33 1 23 45 67 89</p>
+        <p>Adresse : 123 Rue des Hôtels, Paris, France</p>
+        <p>© 2024 Hôtel Luxor. Tous droits réservés.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
